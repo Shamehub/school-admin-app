@@ -1,0 +1,44 @@
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  padding: 20px 0;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav {
+  padding: 0 10px;
+}
+
+.sidebar .nav-link {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .sidebar .nav {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .sidebar .nav-link {
+    white-space: nowrap;
+    margin: 0 5px;
+  }
+}
